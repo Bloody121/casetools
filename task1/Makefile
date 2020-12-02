@@ -37,6 +37,6 @@ helper:
 	make distclean - очистить все файлы." 
 
 .PHONY: clean
-.SILENT:  wc
+.SILENT:  wc clean
 .DEFAULT:
 	@make helper
