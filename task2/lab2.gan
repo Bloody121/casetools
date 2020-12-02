@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?><project name="Untitled Gantt Project" company="" webLink="http://" view-date="2020-11-19" view-index="0" gantt-divider-location="320" resource-divider-location="300" version="2.8.11" locale="ru_RU">
+    <description/>
+    <view zooming-state="default:2" id="gantt-chart">
+        <field id="tpd3" name="Название" width="174" order="0"/>
+        <field id="tpd4" name="Дата начала" width="71" order="1"/>
+        <field id="tpd5" name="Дата окончания" width="71" order="2"/>
+    </view>
+    <view id="resource-table">
+        <field id="0" name="Имя" width="210" order="0"/>
+        <field id="1" name="Стандартная роль" width="86" order="1"/>
+    </view>
+    <!-- -->
+    <calendars>
+        <day-types>
+            <day-type id="0"/>
+            <day-type id="1"/>
+            <default-week id="1" name="default" sun="1" mon="0" tue="0" wed="0" thu="0" fri="0" sat="1"/>
+            <only-show-weekends value="false"/>
+            <overriden-day-types/>
+            <days/>
+        </day-types>
+    </calendars>
+    <tasks empty-milestones="true">
+        <taskproperties>
+            <taskproperty id="tpd0" name="type" type="default" valuetype="icon"/>
+            <taskproperty id="tpd1" name="priority" type="default" valuetype="icon"/>
+            <taskproperty id="tpd2" name="info" type="default" valuetype="icon"/>
+            <taskproperty id="tpd3" name="name" type="default" valuetype="text"/>
+            <taskproperty id="tpd4" name="begindate" type="default" valuetype="date"/>
+            <taskproperty id="tpd5" name="enddate" type="default" valuetype="date"/>
+            <taskproperty id="tpd6" name="duration" type="default" valuetype="int"/>
+            <taskproperty id="tpd7" name="completion" type="default" valuetype="int"/>
+            <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
+            <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
+        </taskproperties>
+        <task id="0" name="Планирование" color="#8cb6ce" meeting="false" start="2020-11-02" duration="14" complete="0" thirdDate="2020-10-30" thirdDate-constraint="0" expand="true">
+            <depend id="31" type="2" difference="0" hardness="Strong"/>
+            <task id="3" name="Поиск помещения" color="#8cb6ce" meeting="false" start="2020-11-02" duration="6" complete="0" thirdDate="2020-10-30" thirdDate-constraint="0" expand="true">
+                <depend id="6" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="6" name="Сбор разрешений" color="#8cb6ce" meeting="false" start="2020-11-10" duration="4" complete="0" thirdDate="2020-11-03" thirdDate-constraint="0" expand="true">
+                <depend id="126" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="126" name="Подготовка помещения" color="#8cb6ce" meeting="false" start="2020-11-16" duration="4" complete="0" thirdDate="2020-11-10" thirdDate-constraint="0" expand="true"/>
+        </task>
+        <task id="31" name="Ремонт помещения" color="#000000" meeting="false" start="2020-11-20" duration="17" complete="0" thirdDate="2020-10-30" thirdDate-constraint="0" expand="true">
+            <depend id="129" type="2" difference="0" hardness="Strong"/>
+            <task id="45" name="Поиск дизайнера" color="#8cb6ce" meeting="false" start="2020-11-20" duration="2" complete="0" thirdDate="2020-10-30" thirdDate-constraint="0" expand="true">
+                <depend id="136" type="3" difference="0" hardness="Strong"/>
+            </task>
+            <task id="47" name="Поиск бригады рабочих" color="#8cb6ce" meeting="false" start="2020-11-20" duration="3" complete="0" thirdDate="2020-10-30" thirdDate-constraint="0" expand="true">
+                <depend id="145" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="136" name="Обсуждения дизайна" color="#8cb6ce" meeting="false" start="2020-11-20" duration="3" complete="0" thirdDate="2020-11-16" thirdDate-constraint="0" expand="true"/>
+            <task id="145" name="Ремонт" color="#8cb6ce" meeting="false" start="2020-11-25" duration="14" complete="0" thirdDate="2020-11-16" thirdDate-constraint="0" expand="true"/>
+        </task>
+        <task id="129" name="Техническое открытие" color="#8cb6ce" meeting="false" start="2020-12-15" duration="5" complete="0" thirdDate="2020-10-29" thirdDate-constraint="0" expand="true">
+            <task id="141" name="Набор персонала" color="#8cb6ce" meeting="false" start="2020-12-15" duration="3" complete="0" thirdDate="2020-12-09" thirdDate-constraint="0" expand="true">
+                <depend id="163" type="2" difference="0" hardness="Strong"/>
+                <depend id="332" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="163" name="Работа в тестовом режиме" color="#8cb6ce" meeting="false" start="2020-12-18" duration="2" complete="0" thirdDate="2020-12-09" thirdDate-constraint="0" expand="true"/>
+            <task id="332" name="Привлечение первых клиентов" color="#8cb6ce" meeting="false" start="2020-12-18" duration="2" complete="0" thirdDate="2020-12-18" thirdDate-constraint="0" expand="true"/>
+        </task>
+        <task id="342" name="Открытие" color="#8cb6ce" meeting="false" start="2020-12-22" duration="1" complete="0" thirdDate="2020-11-19" thirdDate-constraint="0" expand="true"/>
+    </tasks>
+    <resources>
+        <resource id="0" name="Директор клуба" function="Default:0" contacts="" phone=""/>
+        <resource id="1" name="Бизнесмен" function="Default:1" contacts="" phone=""/>
+        <resource id="2" name="Менеджер" function="Default:0" contacts="" phone=""/>
+    </resources>
+    <allocations>
+        <allocation task-id="136" resource-id="0" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="126" resource-id="0" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="141" resource-id="0" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="163" resource-id="0" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="342" resource-id="0" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="45" resource-id="1" function="Default:1" responsible="true" load="50.0"/>
+        <allocation task-id="47" resource-id="1" function="Default:1" responsible="true" load="50.0"/>
+        <allocation task-id="3" resource-id="1" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="6" resource-id="1" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="145" resource-id="1" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="332" resource-id="2" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="342" resource-id="2" function="Default:0" responsible="false" load="100.0"/>
+    </allocations>
+    <vacations/>
+    <previous/>
+    <roles roleset-name="Default"/>
+</project>
